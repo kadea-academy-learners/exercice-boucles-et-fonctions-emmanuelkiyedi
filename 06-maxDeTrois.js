@@ -1,3 +1,5 @@
+const { number } = require("yargs");
+
 /*
   Énoncé :
   Crée une fonction `maxDeTrois(a, b, c)` qui :
@@ -11,9 +13,24 @@
   Placeholder : levée d'erreur pour indiquer que l'exercice doit être implémenté.
 */
 function maxDeTrois(a, b, c) {
-  // Placeholder neutre : retourne null pour indiquer non-implémentation
+  if (a==b==c){
+    return "Les trois nombres sont égaux";
+  }
+  else if (typeof (a || b || c) !== number )
   return null;
-}
+  // Placeholder neutre : retourne null pour indiquer non-implémentation
+  else if(a>b&&c)
+  return a;
+  else if(b<a&&c){ 
+  return b;
+  }
+  else {
+  return c;
+  }
+  
+  }
+
+
 
 // Ne pas modifier la ligne ci-dessous
 module.exports = { maxDeTrois };

@@ -10,11 +10,22 @@
 
   Placeholder : levée d'erreur pour indiquer que l'exercice doit être implémenté.
 */
-function estImpair(n) {
+function estImpair(n) 
   // Exercice non implémenté : vérifier si n est impair
   // Placeholder neutre : retourne null pour indiquer non-implémentation
-  return null;
+{
+  if (typeof n !=="number"){
+    return null;
+  }
+  else if (typeof n === "number" && n%2 === 0){
+    return false;
+  }
+  else {
+    return true;
+  }
 }
-
 // Ne pas modifier la ligne ci-dessous
 module.exports = { estImpair };
+
+
+estImpair(19);

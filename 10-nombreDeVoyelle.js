@@ -11,8 +11,30 @@
 function nombreDeVoyelles(phrase) {
   // Exercice non implémenté : doit compter les voyelles
   // Placeholder neutre : retourne 0 pour indiquer non-implémentation
-  return 0;
+  let nombreDeVoyelles = 0;
+  phrase = phrase.toLowerCase(); 
+  for(let i=0; i<phrase.length; i++){
+  if (phrase[i]=="a"){
+    nombreDeVoyelles=nombreDeVoyelles+1
+  }
+  else if (phrase[i]=="e"){ 
+    nombreDeVoyelles++
+  }
+  else if (phrase[i]=="i"){
+    nombreDeVoyelles++
+  }
+  else if (phrase[i]=="o"){
+    nombreDeVoyelles++
+  }
+  else if (phrase[i]=="u"){
+    nombreDeVoyelles++
+  }
+  else if (phrase[i]=="y"){
+    nombreDeVoyelles++
+  }
+    
+}  
+  return nombreDeVoyelles;
 }
-
 // Ne pas modifier la ligne ci-dessous
 module.exports = { nombreDeVoyelles }
